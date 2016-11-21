@@ -1,0 +1,47 @@
+# Basic
+title: 花郎
+subtitle: 心有猛虎，细嗅蔷薇
+welcome_message: <a href="http:www.loulijun.com" target="_blank">欢迎访问花郎的博客</a>
+description: 其实我是个程序员
+creator: <a href="http://www.loulijun.com">@loulijun</a>
+
+url: "http://www.loulijun.com"
+
+permalink: /:year/:month/:title/
+
+# Format
+highlighter: plain
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: slate
+
+# The blog button should not be removed.
+blog_button:
+    title: Blog
+    description: Visit blog
+
+# Navigation buttons in the front page.
+nav:
+    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    # - {title: Another Button, description: A button, url: 'http://example.com'}
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    disqus: vno-jekyll
+    # duoshuo: 
+    
+# Social
+social:
+    weibo: loulijun
+    github: loulijun
+    twitter: loulijun
+
+# Google Analytics
+ga:
+    # id: your_ga_id
+    # host: your_host
