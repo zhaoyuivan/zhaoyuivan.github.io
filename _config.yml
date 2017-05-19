@@ -1,19 +1,19 @@
 # Basic
 title: 肤浅的大西瓜
-subtitle: 
-welcome_message: <a href="http:www.loulijun.com" target="_blank">欢迎来互相伤害</a>
+subtitle:
+welcome_message: <a href="https://zhaoyuivan.github.io/#blog" target="_blank">来互相伤害呀- -`</a>
 description: iOS码农
-creator: <a href="http://www.loulijun.com">@loulijun</a>
+creator: <a href="https://zhaoyuivan.github.io/#blog">@zhaoyuivan</a>
 
-url: "http://www.loulijun.com"
+url: "https://zhaoyuivan.github.io"
 
 permalink: /:year/:month/:title/
 
 # Format
-highlighter: plain
+highlighter: rouge
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: slate
+cover_color: red
 
 # The blog button should not be removed.
 blog_button:
@@ -22,7 +22,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: Projects, description: My Projects, url: 'https://github.com/zhaoyuivan'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
@@ -37,9 +37,11 @@ comment:
     
 # Social
 social:
-    weibo: loulijun
-    github: loulijun
-    twitter: loulijun
+#    weibo: onevcat
+    github: zhaoyuivan
+#    twitter: onevcat
+#    gplus: 107108267983477358170
+    mail: zhaoyuivanzhao@126.com
 
 # Google Analytics
 ga:
