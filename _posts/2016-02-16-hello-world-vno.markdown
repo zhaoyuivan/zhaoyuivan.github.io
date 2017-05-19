@@ -10,7 +10,7 @@ date: 2016-02-16 15:32:24.000000000 +09:00
 
 #### Usage
 
-```bash
+```
 $ git clone https://github.com/onevcat/vno-jekyll.git your_site
 $ cd your_site
 $ bundler install
