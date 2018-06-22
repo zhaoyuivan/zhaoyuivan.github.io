@@ -27,9 +27,9 @@ date: 2018-06-21
     - 等等
 - JSX
 
-###### native 与 rn 开发模式
+###### native与rn开发模式
 ![模式对比](./structure.png)
-Native最常见的是MVC开发模式，数据通过controller设置到view上，view上的交互再通过controller反映到model上。而在RN开发中，所有界面的结构组织及展示都是基于组件的，
+Native最常见的是MVC开发模式，数据通过controller设置到view上，view上的交互再通过controller反映到model上。而在RN开发中，所有界面的结构组织及展示都是基于组件的，整个页面的构成更接近组件的拼接，对于每个组件，除了来自父组件的props数据，其本身是个状态机，所有页面的变化都是跟状态一一对应的，每指定一种状态，都会有一个对应的页面。页面上的交互通过一些事件来改变状态，进而又更新了页面。所以整个页面的变化都是跟随状态单向变化的，交互的控制流向也是单向的。
 
 ### props & state
 ###### props
@@ -42,7 +42,7 @@ Native最常见的是MVC开发模式，数据通过controller设置到view上�
 - 通过this.setState()修改
 
 ||props|state|
-|-----|----|---|
+|----|----|----|
 |能否从父组件获取初始值|true|false|
 |父组件能否修改|true|false|
 |在组件内部能否修改|false|true|
@@ -132,8 +132,8 @@ export default Clock;
 ### 生命周期
 ![生命周期](https://mmbiz.qpic.cn/mmbiz_png/3QD99b9DjVHwjmmpXSxpIwR7mJW6LDEiamP37KMNTmQVz166IrLpAY0P1d12vyYYpMCwn82aLydGZzYL2Xraajg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
 - 在 ```shouldComponentUpdate(nextProps, nextState) ```方法中，我们可以根据 nextProps 或 nextState 的值来确定是否需要重新渲染组件。默认是返回 true，如果返回 false，则后续流程会被中断。**主要是用来判断不必要的渲染逻辑，当这里判断逻辑的复杂度如果超过了diff算法，就会得不偿失**。
-- ```componentWillUpdate(nextProps, nextState)``` 是在即将更新组件之前的操作。这个方法在当前最新版本的react.js中被重命名为 UNSAFE_componentWillUpdate(nextProps, nextState)。在这个方法中，我们不能去调用 setState 方法，或者做其它可能会引起组件重新渲染的操作。
-- ```componentDidUpdate(prevProps, prevState, snapshot)``` 方法会在组件重新渲染完成之后调用。我们可以看到这时参数名已变成 prevProps和 prevState，保存的是更新之前的 props 和 state。在这个方法中，可以去执行 DOM 操作，也可以去做网络请求等操作。这里虽然可以调用 setState() 方法，不过需要注意加判断逻辑，避免无限循环。
+- ```componentWillUpdate(nextProps, nextState)``` 是在即将更新组件之前的操作。这个方法在当前最新版本的react.js中被重命名为UNSAFE_componentWillUpdate(nextProps, nextState)。在这个方法中，我们不能去调用setState方法，或者做其它可能会引起组件重新渲染的操作。
+- ```componentDidUpdate(prevProps, prevState, snapshot)``` 方法会在组件重新渲染完成之后调用。我们可以看到这时参数名已变成 prevProps和prevState，保存的是更新之前的 props和state。在这个方法中，可以去执行DOM操作，也可以去做网络请求等操作。这里虽然可以调用 setState()方法，不过需要注意加判断逻辑，避免无限循环。
 
 react.js 16.3版本后，实际上，在官方的最新文档中，有几个生命周期方法已被标记为 UNSAFE
 - UNSAFE_componentWillMount()
@@ -146,6 +146,6 @@ react.js 16.3版本后，实际上，在官方的最新文档中，有几个生�
 - componentWillReceiveProps()
 
 ```static getDerivedStateFromProps(props, state)```
-这是在 React 16.3 新加入的方法，主要是为了避免在 UNSAFE_componentWillReceiveProps 中使用 setState() 而产生的副作用。生命周期为下图所示
+这是在 React 16.3 新加入的方法，主要是为了避免在 UNSAFE_componentWillReceiveProps 中使用setState()而产生的副作用。生命周期为下图所示
 ![](http://upload-images.jianshu.io/upload_images/3790386-b0c8a024d0ae1f80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
