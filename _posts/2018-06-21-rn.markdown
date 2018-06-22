@@ -30,10 +30,12 @@ date: 2018-06-21
 Native最常见的是MVC开发模式，数据通过controller设置到view上，view上的交互再通过controller反映到model上。而在RN开发中，所有界面的结构组织及展示都是基于组件的，整个页面的构成更接近组件的拼接，对于每个组件，除了来自父组件的props数据，其本身是个状态机，所有页面的变化都是跟状态一一对应的，每指定一种状态，都会有一个对应的页面。页面上的交互通过一些事件来改变状态，进而又更新了页面。所以整个页面的变化都是跟随状态单向变化的，交互的控制流向也是单向的。
 
 ### props & state
+
 ###### props
 - props 是一种从父级向子级传递数据的方式
 - props 也是父子组件进行通信的一种方式
 - props 不应被手动修改
+
 ###### state
 - state 是component的状态，每个component都是一个状态机
 - 在constructor中初始化
@@ -148,7 +150,3 @@ react.js 16.3版本后，实际上，在官方的最新文档中，有几个生�
 
 参考
 - [https://mp.weixin.qq.com/s/mvhk2ehvS_fL3wO_tELdoA](https://mp.weixin.qq.com/s/mvhk2ehvS_fL3wO_tELdoA)
-
-{% plantuml %}
-[First] - [Second]
-{% endplantuml %}
