@@ -147,4 +147,8 @@ react.js 16.3版本后，实际上，在官方的最新文档中，有几个生�
 ![](http://upload-images.jianshu.io/upload_images/3790386-b0c8a024d0ae1f80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 参考
-- https://mp.weixin.qq.com/s/mvhk2ehvS_fL3wO_tELdoA
+- [https://mp.weixin.qq.com/s/mvhk2ehvS_fL3wO_tELdoA](https://mp.weixin.qq.com/s/mvhk2ehvS_fL3wO_tELdoA)
+
+{% plantuml %}
+[First] - [Second]
+{% endplantuml %}

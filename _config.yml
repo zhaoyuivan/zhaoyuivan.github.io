@@ -26,7 +26,7 @@ nav:
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
-gems: [jekyll-paginate, jekyll-plantuml]
+gems: [jekyll-paginate]
 paginate: 10
 paginate_path: "page/:num/"
 
@@ -47,3 +47,7 @@ social:
 ga:
     # id: your_ga_id
     # host: your_host
+
+# This will require each of these plugins automatically.
+plugins_dir:
+  - jekyll-plantuml
