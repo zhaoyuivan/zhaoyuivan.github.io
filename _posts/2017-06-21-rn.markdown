@@ -149,3 +149,6 @@ react.js 16.3版本后，实际上，在官方的最新文档中，有几个生�
 这是在 React 16.3 新加入的方法，主要是为了避免在 UNSAFE_componentWillReceiveProps 中使用setState()而产生的副作用。生命周期为下图所示
 ![](http://upload-images.jianshu.io/upload_images/3790386-b0c8a024d0ae1f80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+{% plantuml %}
+[First] - [Second]
+{% endplantuml %}
