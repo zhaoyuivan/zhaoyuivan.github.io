@@ -148,8 +148,3 @@ react.js 16.3版本后，实际上，在官方的最新文档中，有几个生�
 
 参考
 - https://mp.weixin.qq.com/s/mvhk2ehvS_fL3wO_tELdoA
-
-
-{% plantuml %}
-[First] - [Second]
-{% endplantuml %}
