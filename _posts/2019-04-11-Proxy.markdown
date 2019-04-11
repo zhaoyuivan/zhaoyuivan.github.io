@@ -215,6 +215,7 @@ deleteProperty方法用于拦截delete操作，如果这个方法抛出错误或
 deleteProperty (target, key) {}
 * target是目标对象
 * key是要删除的属性名
+
 ``` js
 var handler = {
   deleteProperty (target, key) {
@@ -234,6 +235,7 @@ var proxy = new Proxy(target, handler);
 delete proxy._prop
 // Error: Invalid attempt to delete private "_prop" property
 ```
+
 目标对象自身的不可配置（configurable）的属性，不能被deleteProperty方法删除，否则报错。
 
 ##### ownKeys()
